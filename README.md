@@ -66,7 +66,7 @@ make feature FEATURE=cadastro_cliente
 O gerador cria a seguinte hierarquia de arquivos com *templates* Dart, usando a primeira letra capitalizada (`[Feature]`) em nomes de classes:
 
 ```
-lib/v2/feature/[FEATURE]/
+lib/feature/[FEATURE]/
 ├── domain/
 │   ├── entities/
 │   │   └── [feature]_entity.dart (class [Feature]Entity)
