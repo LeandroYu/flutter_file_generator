@@ -1,9 +1,3 @@
-É uma excelente ideia documentar o uso do seu gerador de *features*\! Isso facilita muito para qualquer pessoa (ou você mesmo no futuro) começar a usá-lo rapidamente em diferentes sistemas operacionais.
-
-Aqui está um modelo de `README.md` completo:
-
------
-
 # 🛠️ Gerador de Estrutura de Feature (Clean Architecture)
 
 Este `Makefile` automatiza a criação de um módulo ou *feature* completo, seguindo uma estrutura de Clean Architecture (Domain, Infra, External, Presentation), economizando tempo e garantindo a consistência do código.
