@@ -105,7 +105,7 @@ criar_presentation:
 	@echo "-> Gerando arquivos PRESENTATION..."
 	
 	# [FEATURE]_page.dart (StatefulWidget)
-	@printf "import 'package:flutter/material.dart';\n\nimport '../../../../shared/presentation/widgets/copel_body_base.dart';\n\nclass $(FEATURE_CAPITALIZADA)Page extends StatefulWidget {\n  const $(FEATURE_CAPITALIZADA)Page({super.key});\n\n  @override\n  State<$(FEATURE_CAPITALIZADA)Page> createState() => _$(FEATURE_CAPITALIZADA)PageState();\n}\n\nclass _$(FEATURE_CAPITALIZADA)PageState extends State<$(FEATURE_CAPITALIZADA)Page> {\n  @override\n  Widget build(BuildContext context) {\n    return const CopelBodyBase(\n      body: [],\n    );\n  }\n}" > $(DIRETORIO_FINAL)/presentation/page/$(FEATURE)_page$(EXTENSAO)
+	@printf "import 'package:flutter/material.dart';\n\nclass $(FEATURE_CAPITALIZADA)Page extends StatefulWidget {\n  const $(FEATURE_CAPITALIZADA)Page({super.key});\n\n  @override\n  State<$(FEATURE_CAPITALIZADA)Page> createState() => _$(FEATURE_CAPITALIZADA)PageState();\n}\n\nclass _$(FEATURE_CAPITALIZADA)PageState extends State<$(FEATURE_CAPITALIZADA)Page> {\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      body: Container(),\n    );\n  }\n}" > $(DIRETORIO_FINAL)/presentation/page/$(FEATURE)_page$(EXTENSAO)
 
 	# [FEATURE]_cubit.dart
 	@printf "import 'package:flutter_bloc/flutter_bloc.dart';\n\nimport '$(FEATURE)_state$(EXTENSAO)';\n\nclass $(FEATURE_CAPITALIZADA)Cubit extends Cubit<$(FEATURE_CAPITALIZADA)State>{\n  $(FEATURE_CAPITALIZADA)Cubit(super.initialState);\n}" > $(DIRETORIO_FINAL)/presentation/controller/$(FEATURE)_cubit$(EXTENSAO)
